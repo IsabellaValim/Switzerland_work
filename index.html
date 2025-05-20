@@ -4,99 +4,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="icon.avif">
   <title>Home page</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    body {
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px 0;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
 
-    /* Carrossel ocupa toda a largura da tela */
-    #carouselExampleCaptions {
-      width: 100vw;
-      margin-bottom: 40px;
-    }
-
-    .carousel-inner img {
-      width: 100vw;
-      height: 400px;
-      object-fit: cover;
-    }
-
-    .card {
-      max-width: 600px;
-      width: 90%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Bandeira maior e centralizada */
-    .band {
-      display: block;
-      margin: 0 auto 25px auto;
-      height: 120px;
-      width: auto;
-      object-fit: contain;
-    }
-
-    /* Responsividade para dispositivos móveis */
-    @media (max-width: 576px) {
-      .carousel-inner img {
-        height: 250px;
-        /* imagem menor em telas pequenas */
-      }
-
-      .card {
-        width: 95%;
-        padding: 15px;
-      }
-
-      .band {
-        height: 90px;
-        /* bandeira menor para caber melhor */
-        margin-bottom: 15px;
-      }
-
-      ul.nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 0 10px;
-      }
-
-      ul.nav .nav-item {
-        flex: 1 1 auto;
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Hotels</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Typical foods</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Tourist attractions</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Curiosities</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Famous restaurants</a>
-    </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Swiss Essence</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Typical foods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tourist attractions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Curiosities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Famous restaurants</a>
+          </li>
   </ul>
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
