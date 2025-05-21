@@ -4,7 +4,6 @@ body {
     padding: 20px 0;
 }
 
-
 #carouselExampleCaptions {
     width: 100vw;
     margin-bottom: 40px;
@@ -17,12 +16,11 @@ body {
 }
 
 .card {
-    max-width: 600px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
 }
-
 
 .band {
     display: block;
@@ -33,6 +31,20 @@ body {
     margin-bottom: 10px;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 calc(50% - 20px);
+        /* 2 por linha em tablets */
+    }
+}
 
 @media (max-width: 576px) {
     .carousel-inner img {
@@ -40,7 +52,8 @@ body {
     }
 
     .card {
-        width: 95%;
+        flex: 0 1 100%;
+        /* 1 por linha em celulares */
         padding: 15px;
     }
 
@@ -65,16 +78,20 @@ body {
 h5 {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: normal;
 }
 
 p {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
-    font-weight: 500px;
+    font-weight: 500;
     font-style: normal;
     text-align: justify;
     text-justify: inter-word;
+}
 
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 30px;
 }
