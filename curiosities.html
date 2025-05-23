@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.avif">
+    <title>Curiosities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            flex: 1 1 calc(33.333% - 13.333px);
+
+        }
+
+        h2 {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cards-container .card:nth-child(4),
+        .cards-container .card:nth-child(5) {
+            flex: 1 1 calc(50% - 10px);
+        }
+
+        p {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a id="color" class="nav-link active" aria-current="page" href="index.html">Home Page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="hotel.html">Hotels</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="foods.html">Typical foods</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="touristattractions.html">Tourist attractions</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="curiosities.html">Curiosities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Famous restaurants</a>
+        </li>
+    </ul>
+
+    <h1 class="text-center mt-4">Curiosities</h1>
+
+    <div class="section">
+        <h2 class="section-title">Cultural Facts</h2>
+        <div class="cards-container">
+            <div class="card">Punctuality is a national virtue: Being late for an appointment, even a social one, can be
+                seen as disrespectful</div>
+            <div class="card">Sunday is sacred (almost literally): It’s common for supermarkets to close, and noisy
+                activities like vacuuming or mowing the lawn are avoided on Sundays.
+            </div>
+            <div class="card">Every region has its own identity: A Swiss person from the French-speaking canton may have
+                very different habits from one in the German-speaking canton — it’s like "mini-countries" within the
+                country.
+            </div>
+            <div class="card">Respect for nature: The Swiss take the environment very seriously — recycling is mandatory
+                and extremely organized.
+            </div>
+            <div class="card">Fondue is a real tradition: And they take it seriously: if your bread falls into the pot,
+                there’s often a funny "penalty" like buying wine or kissing the person next to you!
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2 class="section-title">Historical Facts</h2>
+        <div class="cards-container">
+            <div class="card">he army hasn’t been used in war for centuries, but every Swiss man is trained and serves
+                mandatory military service.
+            </div>
+            <div class="card">The Red Cross was founded in Geneva in 1863, and its flag is the reverse of the Swiss
+                flag.</div>
+            <div class="card">The Vatican Swiss Guard: The Pope's guards are Swiss! This tradition began in the 16th
+                century.
+            </div>
+            <div class="card">Switzerland only joined the United Nations in 2002, despite hosting the UN headquarters in
+                Geneva since its foundation.</div>
+            <div class="card">The Swiss banking system was famous for absolute secrecy, which only started to change in
+                the 2000s due to international pressure.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2 class="section-title">Funny / Unusual Facts</h2>
+        <div class="cards-container">
+            <div class="card">Flushing the toilet after 10 p.m. is banned? In some old buildings, yes! It’s considered
+                too noisy and might disturb neighbors.
+            </div>
+            <div class="card">Horses have health insurance: Large animals like horses can have health insurance — and
+                this is not a joke!
+            </div>
+            <div class="card">Fines based on income: A millionaire once received a speeding ticket of over 200,000 Swiss
+                francs because fines are proportional to income.
+            </div>
+            <div class="card">Mountain bank vaults: Secret bunkers hidden in the Swiss Alps store gold, art, and other
+                valuables for millionaires worldwide.
+            </div>
+            <div class="card">IDifficult citizenship: In some small villages, residents vote on whether you can become a
+                Swiss citizen — they literally ask the neighbors what they think about you.</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
