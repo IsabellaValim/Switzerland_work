@@ -109,4 +109,62 @@ h1 {
 
 .text-justify {
     text-align: justify;
-  }
+}
+
+.dropdown-toggle {
+    background-color: #198754;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.dropdown-menu {
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #198754;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+/* Espaçamento entre o carrossel e outros elementos */
+.carousel {
+    margin: 30px auto;
+}
+
+/* Bordas arredondadas nas imagens do carrossel */
+.carousel-item img {
+    border-radius: 15px;
+}
+
+/* Ajusta o carrossel para não ficar gigante */
+#carouselExampleSlidesOnly {
+    max-width: 600px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
